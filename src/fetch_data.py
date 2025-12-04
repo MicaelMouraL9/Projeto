@@ -4,8 +4,10 @@ import os
 
 def load_data():
     # Caminho absoluto relativo à raiz do projeto
-    base_dir = os.path.dirname(os.path.dirname('raw.csv'))  # sobe de src/ para a raiz
-    csv_path = os.path.join(base_dir, "data", "raw", "ds.csv")
+
+    base_dir = os.path.dirname(os.path.dirname('raw.csv'))  # sobe de src/ para raiz
+    csv_path = r"C:\Users\Admin\Documents\CURSO\Atividades_806\10806\Atividade3\Grupo6"
+
     
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"CSV não encontrado: {csv_path}")
